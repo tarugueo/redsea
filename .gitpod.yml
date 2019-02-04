@@ -4,7 +4,7 @@ USER root
 # Install custom tools, runtime, etc.
 RUN apt-get update && apt-get install -y \
 
-get install git build-essential autoconf libsndfile1-dev libliquid-dev
+get install git build-essential autoconf libsndfile1-dev libliquid-dev mc
 
 RUN ./autogen.sh && ./configure && make
 
